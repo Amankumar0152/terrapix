@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Mountain Sunset",
+    "publicId": "sunset-1.2_tfztpk",
+    "tags": ["nature", "mountains", "sunset"],
+    "category": "nature"
+  },
+  {
+    "id": 2,
+    "title": "Neon City",
+    "publicId": "sunset_ehmdfs",
+    "tags": ["city", "urban", "night"],
+    "category": "city"
+  },
+  {
+    "id": 3,
+    "title": "Abstract Waves",
+    "publicId": "sunset_nultug",
+    "tags": ["abstract", "art", "colorful"],
+    "category": "abstract"
+  }
+]

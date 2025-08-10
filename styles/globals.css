@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+.nav-link {
+  @apply text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 relative;
+}
+
+.nav-link::after {
+  @apply content-[''] absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-400 to-pink-600 transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full left-0;
+}
+
+.dropdown-menu {
+  @apply absolute left-0 mt-2 w-56 origin-top-right bg-gray-800/95 backdrop-blur-lg rounded-md shadow-lg ring-1 ring-black/5 divide-y divide-gray-700 opacity-0 invisible transition-all duration-200 scale-95;
+}
+
+.group:hover .dropdown-menu {
+  @apply opacity-100 visible scale-100;
+}
+
+.dropdown-item {
+  @apply block px-4 py-3 text-sm text-gray-300 hover:bg-gray-700/50 hover:text-white transition-colors duration-150;
+}
+
+.mobile-nav-link {
+  @apply block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:bg-gray-800 hover:text-white transition-colors duration-200;
+}
+
+/* Animation for menu items */
+.mobile-nav-link {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
